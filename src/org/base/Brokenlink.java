@@ -29,7 +29,7 @@ public class Brokenlink {
 			URLConnection openconnection = s.openConnection();
 			HttpURLConnection response = (HttpURLConnection) openconnection;
 			int responsecode = response.getResponseCode();
-			if (responsecode >= 300 && responsecode <= 399) {
+			if (responsecode >= 400 && responsecode <= 499) {
 				System.out.println(a);
 				brokenlinkcount++;
 			}
